@@ -7,7 +7,7 @@
 * created 22-11-26 회사 사무실
 * artifact : hello.servlet
 * implements : springweb, lombok
-
+---
 ### 내용
 * RequestHeaderServlet
   * URL : /request-header
@@ -30,3 +30,9 @@
 * ResponseJsonServlet
   * URL : /response-json
   * Response API JSON
+---
+* web.servlet
+  * 자바로 회원가입 등록 및 조회 전부 처리
+* web.servletmvc
+  * jsp로 포워드 회원가입 등록 및 조회 전부 처리
+  * mvc 도입
