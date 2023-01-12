@@ -3,6 +3,8 @@
 ## 목차
 1. JDBC 이해
 2. 커넥션풀과 데이터소스 이해
+3. 트랜잭션 이해
+4. 스프링과 문제 해결 - 트랜잭션
 
 ## 1. JDBC 이해   
 #### package hello.jdbc.repository.MemberRepositoryV0   
@@ -24,3 +26,11 @@
 #### 롤백 - rollback
 #### DB락 - 트랜잭션 시 락이 걸림. 락을 획득해야 변경가능. 조회 시는 select for update 로 락 획득 가능
 #### 핵심 문법 : SQL 트랜잭션, DB 락
+
+## 4. 스프링과 문제 해결 - 트랜잭션
+#### package hello.jdbc.repository.MemberRepositoryV3
+#### package hello.jdbc.service.MemberServiceV3
+#### PlatformTransactionManager - 트랜잭션 매니저 인터페이스로 커밋과 롤백이 구현
+#### DataSourceUtils - 트랜잭션 동기화 사용하여 커넥션 저장
+#### @Transactional - 스프링 AOP 이용 서비스와 트랜잭션 코드 분리
+#### 핵심 문법 : PlatformTransactionManager, DataSourceUtils, @Transactional
