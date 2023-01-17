@@ -5,6 +5,7 @@
 2. 커넥션풀과 데이터소스 이해
 3. 트랜잭션 이해
 4. 스프링과 문제 해결 - 트랜잭션
+5. 자바 예외 이해
 
 ## 1. JDBC 이해   
 #### package hello.jdbc.repository.MemberRepositoryV0   
@@ -34,3 +35,11 @@
 #### DataSourceUtils - 트랜잭션 동기화 사용하여 커넥션 저장
 #### @Transactional - 스프링 AOP 이용 서비스와 트랜잭션 코드 분리
 #### 핵심 문법 : PlatformTransactionManager, DataSourceUtils, @Transactional
+
+## 5. 자바 예외 이해
+#### package hello.jdbc.exception.basic (test 코드)
+#### 체크예외 - 예외를 잡아서 처리하지 않으면 항상 throws에 던지 예외를 선언해야 한다.
+#### 체크예외 - SQLException, IOException 클래스
+#### 언체크예외 - 예외를 잡아서 처리하지 않아도 throws를 생략할 수 있다. 요즘 추세는 언체크예외를 많이 이용한다.
+#### 언체크예외 - RuntimeException 클래스 (체크예외도 RuntimeException 상속받아 처리 가능)
+#### 핵심 문법 : 체크예외, 언체크예외
