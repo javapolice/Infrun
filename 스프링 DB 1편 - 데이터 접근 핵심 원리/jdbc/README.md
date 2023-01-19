@@ -6,6 +6,7 @@
 3. 트랜잭션 이해
 4. 스프링과 문제 해결 - 트랜잭션
 5. 자바 예외 이해
+6. 스프링과 문제 해결 - 예외 처리, 반복
 
 ## 1. JDBC 이해   
 #### package hello.jdbc.repository.MemberRepositoryV0   
@@ -43,3 +44,12 @@
 #### 언체크예외 - 예외를 잡아서 처리하지 않아도 throws를 생략할 수 있다. 요즘 추세는 언체크예외를 많이 이용한다.
 #### 언체크예외 - RuntimeException 클래스 (체크예외도 RuntimeException 상속받아 처리 가능)
 #### 핵심 문법 : 체크예외, 언체크예외
+
+## 6. 스프링과 문제 해결 - 예외 처리, 반복
+#### package hello.jdbc.repository.MemberRepositoryV4 , V5
+#### package hello.jdbc.service.MemberServiceV4
+#### 커스텀 언체크예외 - MyDbException, MyDuplicateKeyException 클래스
+#### 커스텀 언체크예외 - 런타임 언체크예외를 상속 받아 예외 처리한다.
+#### 스프링예외 추상화 - SQLExceptionTranslator 클래스 상속받아 스프링예외를 제공받는다.
+#### JdbcTemplate - JdbcTemplate 클래스 이용 템플릿콜백패턴으로 커넥션 반복코드 제거(트랜잭션,예외변환을 모두 처리해준다)
+#### 핵심 문법 : 커스텀 언체크예외, 스프링예외 추상화, JdbcTemplate
