@@ -4,6 +4,7 @@
 1. 데이터 접근 기술 - 시작
 2. 데이터 접근 기술 - 스프링 JdbcTemplate
 3. 데이터 접근 기술 - 테스트
+4. 데이터 접근 기술 - MyBatis
 
 
 ## 1. 데이터 접근 기술 - 시작  
@@ -23,3 +24,10 @@
 #### @Transactional : 커밋과 롤백 클래스,메서드 레벨 사용
 #### 임베디드 모드 DB : h2 데이터베이스 JVM 메모리 테스트용 DB 기능
 #### 핵심 문법 : @SpringBootTest, @Transactional, 임베디드 모드 DB
+
+## 4. 데이터 접근 기술 - MyBatis
+####  @Mapper : 인터페이스 생성 자동으로 구현체 생성(프록시기술)
+#### mapper.xml : 인터페이스와 연동하여 sql 쿼리작성(동적쿼리작성의 편리함)
+#### myBatis.properties : 마이바티스 관련 설정 작업
+#### myBatis는 DataSource가 필요없다. @mapper로 자동 커넥션
+#### 핵심 문법 : @Mapper, mapper.xml, myBatis.properties
