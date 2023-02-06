@@ -5,6 +5,7 @@
 2. 데이터 접근 기술 - 스프링 JdbcTemplate
 3. 데이터 접근 기술 - 테스트
 4. 데이터 접근 기술 - MyBatis
+5. 데이터 접근 기술 - JPA
 
 
 ## 1. 데이터 접근 기술 - 시작  
@@ -31,3 +32,10 @@
 #### myBatis.properties : 마이바티스 관련 설정 작업
 #### myBatis는 DataSource가 필요없다. @mapper로 자동 커넥션
 #### 핵심 문법 : @Mapper, mapper.xml, myBatis.properties
+
+## 5. 데이터 접근 기술 - JPA
+#### @Entity : JPA가 관리하는 객체 데이터
+#### EntityManager : JPA 사용 시 필수 생성 EntityManager.persist, EntityManager.find
+#### jpql : (Java Persistence Query Language) 객체지향 쿼리 언어
+#### 테이블이 아닌 엔티티 객체의 매핑 정보를 활용
+#### 핵심 문법 : @Entity, EntityManager, jpql
