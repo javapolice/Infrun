@@ -6,6 +6,7 @@
 3. 데이터 접근 기술 - 테스트
 4. 데이터 접근 기술 - MyBatis
 5. 데이터 접근 기술 - JPA
+6. 데이터 접근 기술 - 스프링 데이터 JPA
 
 
 ## 1. 데이터 접근 기술 - 시작  
@@ -39,3 +40,9 @@
 #### jpql : (Java Persistence Query Language) 객체지향 쿼리 언어
 #### 테이블이 아닌 엔티티 객체의 매핑 정보를 활용
 #### 핵심 문법 : @Entity, EntityManager, jpql
+
+## 6. 데이터 접근 기술 - 스프링 데이터 JPA
+#### JpaRepository : 스프링 데이터 JPA를 이용하기 위한 인터페이스 상속
+#### 기본적인 CRUD 구현 및 쿼리메서드 제공
+#### @Query : 메서드에 붙여 JPQL 사용
+#### 핵심 문법 : JpaRepository, @Query
