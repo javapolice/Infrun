@@ -7,6 +7,7 @@
 4. 데이터 접근 기술 - MyBatis
 5. 데이터 접근 기술 - JPA
 6. 데이터 접근 기술 - 스프링 데이터 JPA
+7. 데이터 접근 기술 - Querydsl
 
 
 ## 1. 데이터 접근 기술 - 시작  
@@ -46,3 +47,9 @@
 #### 기본적인 CRUD 구현 및 쿼리메서드 제공
 #### @Query : 메서드에 붙여 JPQL 사용
 #### 핵심 문법 : JpaRepository, @Query
+
+## 7. 데이터 접근 기술 - Querydsl
+#### JPAQueryFactory : EntityManager 를 이용해 동적쿼리를 작성하게 해준다.
+#### BooleanBuilder : 동적 쿼리 작성시 사용
+#### BooleanExpression : 동적 쿼리 작성시 사용
+#### 핵심 문법 : JPAQueryFactory, BooleanBuilder, BooleanExpression
