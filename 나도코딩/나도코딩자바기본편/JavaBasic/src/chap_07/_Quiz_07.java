@@ -13,7 +13,7 @@ public class _Quiz_07 {
             hamBurger.cook();
             System.out.println("-------------");
         }
-        System.out.println("메뉴 준비가 완료되었습니다.");
+        System.out.println("메뉴 준비가 완료되었습니다.!");
     }
 }
 
